@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: darkblue;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+}
+p{
+    text-align: center;
+}
+.container{
+    border:5px solid black;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white;
+    background-color: lightblue;
+    perspective: 1000;
+}
+.izbor{
+    display: flex;
+    padding:5px;
+    border-bottom: 1px grey solid;
+}
+.izbor p{
+    margin:0px 19px;
+    padding:10px;
+}
+.izbor select{
+    padding:10px;
+}
+
+.mjesto{
+    height: 15px;
+    width: 15px;
+    background-color:grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin:3px;
+}
+.mjesto:not(.zauzeto):hover{
+    background-color:aqua;
+    transform: scale(1.2);
+}
+.zauzeto{
+    background-color:red;
+}
+.oznaceno{
+    background-color: aqua;
+}
+.red {
+    display: flex;
+    justify-content: center;
+}
+
+.red :nth-child(3){
+    margin-right: 10px;
+}
+
+.red :nth-last-child(3){
+    margin-left: 10px;
+}
+
+.legend ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+.legend ul li{
+    display:flex;
+    justify-content: space-between;
+    margin:0px 10px;
+}
+
+.ekran{
+    width: 200px;
+    height: 75px;
+    background-color: black;
+    margin:10px auto;
+}
+.dugmad{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding:10px 15px;
+    margin:10px;
+    border-radius: 10px;
+    background-color: grey;
+    color:white;   
+}
+button:hover{
+    color:black;
+    background-color: white;
+}
+#submit{
+    background-color: red;
+}
+
